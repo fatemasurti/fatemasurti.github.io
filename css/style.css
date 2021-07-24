@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    background-image: url("../assets/Screenshot (717).png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.flex-row{
+    display: flex;
+}
+.flex-column{
+    display: flex;
+    flex-flow: column;
+}
+.align-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+header{
+    width: 100%;
+    height: 8rem;
+    justify-content: flex-end;
+}
+header nav{
+    margin-right: 2rem;
+    width: 55%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+header nav ul{
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+header nav ul li{
+    padding: 0 2.5rem;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+}
+header nav ul li:hover{
+    cursor: pointer;
+}
+.title-contain{
+    width: 100%;
+    height: 100vh;
+    /* justify-content: flex-end; */
+}
+.title-contain .title{
+    font-size: 6.5rem;
+    width: 80rem;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    text-align: right;
+    transform: translateY(-50px);
+}
+.category{
+    font-size: 2rem;
+    width: 100%;
+    margin-bottom: 7rem;
+}
+.about, .instagram-feed{
+    width: 80rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 3rem 4rem;
+    color: black;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+.category .title{
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 4rem;
+}
+.category .content{
+    padding: 3rem 0;
+}
+.about .text{
+    text-align: center;
+}
+.posts{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.post{
+    width: 340px;
+}
+.HoverCard, .Feedback, .SocialProof, .Footer{
+    display: none;
+}
+@media (max-width: 50rem) {
+    header nav{
+        display: none;
+    }
+}
